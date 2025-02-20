@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <div class="w-full max-w-md p-8 space-y-6 bg-gray-500 shadow-lg rounded-2xl">
+        <h2 class="text-2xl font-bold text-center text-gray-800">Login to Your Account</h2>
+
+        <!-- Email Login -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" placeholder="Enter your email"
+                class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                required />
+        </div>
+
+        <!-- Password Field -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Password</label>
+            <input type="password" placeholder="Enter your password"
+                class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                required />
+        </div>
+
+        <!-- Phone Number Login -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number"
+                class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                required />
+        </div>
+
+        <!-- Login Button -->
+        <button class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+            Login
+        </button>
+
+        <div class="flex items-center justify-center space-x-3 text-sm text-gray-500">
+            <span>Or login with</span>
+        </div>
+
+        <!-- Social Login Buttons -->
+        <div class="flex flex-col space-y-3">
+            <!-- Facebook Login -->
+            <button
+                class="flex items-center justify-center w-full px-4 py-2 text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                <svg class="w-5 h-5 mr-2" fill="white" viewBox="0 0 24 24">
+                    <path
+                        d="M22 12.08C22 5.58 17.41 2 12 2S2 5.58 2 12.08c0 5.04 3.66 9.24 8.44 9.89v-7.02H7.9v-2.87h2.54V9.74c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46H15.7c-1.37 0-1.79.86-1.79 1.75v2.07h3.05l-.49 2.87h-2.56v7.02C18.34 21.32 22 17.12 22 12.08z" />
+                </svg>
+                Facebook
+            </button>
+
+            <!-- GitHub Login -->
+            <button
+                class="flex items-center justify-center w-full px-4 py-2 text-white bg-black rounded-lg hover:bg-gray-900">
+                <svg class="w-5 h-5 mr-2" fill="white" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12c0 5 3.66 9.19 8.44 9.88v-7.02H7.9v-2.86h2.54V9.74c0-2.51 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46H15.7c-1.37 0-1.79.86-1.79 1.75v2.07h3.05l-.49 2.86h-2.56v7.02C18.34 21.31 22 17.12 22 12c0-5.52-4.48-10-10-10z" />
+                </svg>
+                GitHub
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+{% endblock content %}
